@@ -25,23 +25,27 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+//! Datos del alumno Esteban Volentini
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+//! Datos del alumno Nahuel Espinosa
 static const struct alumno_s NAHUEL_ESPINOSA = {
     .apellidos = "ESPINOSA",
     .nombres = "Nahuel Ignacio",
     .documento = "35.730.467",
 };
 
+// Vector que almacena punteros a los datos de cada alumno
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &NAHUEL_ESPINOSA,
 };
 
+//! Cantidad de alumnos en vector de alumnos
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
